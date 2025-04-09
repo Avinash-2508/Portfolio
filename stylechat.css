@@ -22,7 +22,7 @@ nav {
 }
 
 nav ul {
-    display: fle;
+    display: flex;
     gap: 25px;
 }
 
