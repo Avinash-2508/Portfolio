@@ -23,7 +23,7 @@ body {
 }
 
 .left img:hover {
-    animation: spinAnimate s ease 0s infinite normal;
+    animation: spinAnimate 2s ease 0s infinite normal;
 }
 
 @keyframes spinAnimate {
