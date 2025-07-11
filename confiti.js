@@ -11,7 +11,7 @@ function validateForm() {
     }
 
     const email = document.getElementById('userEmail').value.trim();
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email pattern
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
     if (email.length < 1) {
         document.getElementById('emailError').innerText = 'Please Enter your Mail.';
         isValid = false;
