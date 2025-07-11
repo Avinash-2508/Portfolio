@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const size = Math.random() * 10 + 6; // Between 6-16px
                 const shape = shapes[Math.floor(Math.random() * shapes.length)];
                 const color = colors[Math.floor(Math.random() * colors.length)];
-                const left = Math.random() * 100; // Random horizontal position
+                const left = Math.random() * 100; 
                 
                 // Apply styles
                 confetti.className = `confetti ${shape}`;
