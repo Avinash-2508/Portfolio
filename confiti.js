@@ -98,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let opacity = 1;
         let horizontalPos = parseFloat(element.style.left);
         
-        // Animation function
         function fall() {
             top += fallSpeed; // Update vertical position
             rotation += spinSpeed; // Update rotation
