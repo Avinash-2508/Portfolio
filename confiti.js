@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (validateForm()) {
             successMessage.style.display = 'block';
 
-            // Create confetti celebration
             createConfetti();
 
             // Reset form after a delay
