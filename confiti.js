@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); 
 
         if (validateForm()) {
-            // Show success message
             successMessage.style.display = 'block';
 
             // Create confetti celebration
