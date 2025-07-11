@@ -81,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 const rotation = Math.random() * 360;
                 confetti.style.transform = `rotate(${rotation}deg)`;
                 
-                // Add to container
                 confettiContainer.appendChild(confetti);
                 
                 // Animate falling
