@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const successMessage = document.getElementById('successMessage');
     const confettiContainer = document.getElementById('confetti-container');
 
-    // Confetti colors and shapes definition
     const colors = [
         '#f94144', '#f3722c', '#f8961e', '#f9c74f', 
         '#90be6d', '#43aa8b', '#4d908e', '#577590', 
