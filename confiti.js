@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             setTimeout(() => {
                 form.reset();
-                successMessage.style.display = 'none'; // Hide success message after reset
+                successMessage.style.display = 'none'; 
             }, 3000);
         }
     });
