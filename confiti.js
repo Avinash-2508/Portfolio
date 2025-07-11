@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const shapes = ['square', 'triangle', 'circle'];
 
-    // Form submission event
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
 
