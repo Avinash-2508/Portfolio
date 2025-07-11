@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 confettiContainer.appendChild(confetti);
                 
                 animateConfetti(confetti);
-            }, i * 20); // Stagger creation for better effect
+            }, i * 20); 
         }
     }
     
