@@ -26,7 +26,7 @@ function validateForm() {
         isValid = false;
     }
 
-    return isValid; // Return validation status
+    return isValid; 
 }
 
 document.addEventListener('DOMContentLoaded', function() {
