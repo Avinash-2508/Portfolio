@@ -20,7 +20,6 @@ function validateForm() {
         isValid = false;
     }
 
-    // Validate Message
     const message = document.getElementById('userMessage').value.trim();
     if (message.length < 1) {
         document.getElementById('messageError').innerText = 'Message is required.';
