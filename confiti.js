@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (top < window.innerHeight && opacity > 0) {
                 requestAnimationFrame(fall);
             } else {
-                // Remove confetti from DOM when animation completes
+
                 if (element.parentNode) {
                     element.parentNode.removeChild(element);
                 }
