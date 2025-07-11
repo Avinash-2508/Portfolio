@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function animateConfetti(element) {
         const horizontalMovement = (Math.random() - 0.5) * 15; 
-        const fallSpeed = Math.random() * 3 + 2; // Set random fall speed
+        const fallSpeed = Math.random() * 3 + 2; 
         const spinSpeed = Math.random() * 15 - 7.5; // Set random spin speed
 
         let top = -20; // Starting position
