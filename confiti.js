@@ -106,8 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
             element.style.top = `${top}px`;
             element.style.transform = `rotate(${rotation}deg)`;
             element.style.left = `${horizontalPos}%`;
-
-            // Fade out as it falls past 70% of screen height
+            
             if (top > window.innerHeight * 0.7) {
                 opacity -= 0.03;
                 element.style.opacity = opacity;
