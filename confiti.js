@@ -30,7 +30,6 @@ function validateForm() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Form element and success message
     const form = document.getElementById('celebrationForm');
     const successMessage = document.getElementById('successMessage');
     const confettiContainer = document.getElementById('confetti-container');
