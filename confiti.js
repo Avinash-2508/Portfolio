@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 const confetti = document.createElement('div');
 
-                const size = Math.random() * 10 + 6; // Between 6-16px
+                const size = Math.random() * 10 + 6; 
                 const shape = shapes[Math.floor(Math.random() * shapes.length)];
                 const color = colors[Math.floor(Math.random() * colors.length)];
                 const left = Math.random() * 100; 
