@@ -112,7 +112,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 element.style.opacity = opacity;
             }
 
-            // Continue animation until off-screen or fully transparent
             if (top < window.innerHeight && opacity > 0) {
                 requestAnimationFrame(fall);
             } else {
