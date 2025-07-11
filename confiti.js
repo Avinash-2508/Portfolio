@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         function fall() {
             top += fallSpeed; 
-            rotation += spinSpeed; // Update rotation
+            rotation += spinSpeed; 
             horizontalPos += horizontalMovement / 10; // Update horizontal position
 
             // Update element styles
