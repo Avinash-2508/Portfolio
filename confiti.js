@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let horizontalPos = parseFloat(element.style.left);
         
         function fall() {
-            top += fallSpeed; // Update vertical position
+            top += fallSpeed; 
             rotation += spinSpeed; // Update rotation
             horizontalPos += horizontalMovement / 10; // Update horizontal position
 
