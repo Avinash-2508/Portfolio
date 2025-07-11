@@ -122,7 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
-        // Start animation
         requestAnimationFrame(fall);
     }
 });
