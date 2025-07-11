@@ -83,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 confettiContainer.appendChild(confetti);
                 
-                // Animate falling
                 animateConfetti(confetti);
             }, i * 20); // Stagger creation for better effect
         }
