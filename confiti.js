@@ -1,5 +1,4 @@
 function validateForm() {
-    // Clear previous error messages
     document.getElementById('nameError').innerText = '';
     document.getElementById('emailError').innerText = '';
     document.getElementById('messageError').innerText = '';
