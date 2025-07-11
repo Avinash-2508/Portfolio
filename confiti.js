@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const spinSpeed = Math.random() * 15 - 7.5;
 
         let top = -20; 
-        let rotation = Math.random() * 360; // Random rotation
+        let rotation = Math.random() * 360; 
         let opacity = 1; // Opacity
         let horizontalPos = parseFloat(element.style.left); // Horizontal position
         
