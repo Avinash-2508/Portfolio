@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const confettiCount = 250;
         confettiContainer.innerHTML = ''; 
 
-        // Create confetti pieces
         for (let i = 0; i < confettiCount; i++) {
             setTimeout(() => {
                 const confetti = document.createElement('div');
