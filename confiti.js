@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to create confetti
     function createConfetti() {
         const confettiCount = 250; // Number of confetti pieces
-        confettiContainer.innerHTML = ''; // Clear existing confetti
+        confettiContainer.innerHTML = ''; 
 
         // Create confetti pieces
         for (let i = 0; i < confettiCount; i++) {
