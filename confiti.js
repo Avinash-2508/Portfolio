@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault(); 
 
-        // Validate form input
         if (validateForm()) {
             // Show success message
             successMessage.style.display = 'block';
