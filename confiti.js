@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 const color = colors[Math.floor(Math.random() * colors.length)];
                 const left = Math.random() * 100; 
                 
-                // Apply styles
                 confetti.className = `confetti ${shape}`;
                 confetti.style.width = `${size}px`;
                 confetti.style.height = `${size}px`;
