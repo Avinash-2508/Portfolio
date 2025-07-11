@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             createConfetti();
 
-            // Reset form after a delay
             setTimeout(() => {
                 form.reset();
                 successMessage.style.display = 'none'; // Hide success message after reset
