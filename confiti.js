@@ -10,7 +10,6 @@ function validateForm() {
         isValid = false;
     }
 
-    // Validate Email
     const email = document.getElementById('userEmail').value.trim();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email pattern
     if (email.length < 1) {
