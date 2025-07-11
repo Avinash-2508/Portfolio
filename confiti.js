@@ -103,7 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
             rotation += spinSpeed; 
             horizontalPos += horizontalMovement / 10;
 
-            // Update element styles
             element.style.top = `${top}px`;
             element.style.transform = `rotate(${rotation}deg)`;
             element.style.left = `${horizontalPos}%`;
