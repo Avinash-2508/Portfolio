@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 confetti.style.top = '-20px';
                 confetti.style.opacity = '1';
                 
-                // Set random rotation
                 const rotation = Math.random() * 360;
                 confetti.style.transform = `rotate(${rotation}deg)`;
                 
