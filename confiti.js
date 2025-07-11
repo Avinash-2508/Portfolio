@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let top = -20; 
         let rotation = Math.random() * 360; 
-        let opacity = 1; // Opacity
+        let opacity = 1;
         let horizontalPos = parseFloat(element.style.left); // Horizontal position
         
         // Animation function
