@@ -4,7 +4,6 @@ function validateForm() {
     document.getElementById('messageError').innerText = '';
     let isValid = true;
 
-    // Validate Name
     const name = document.getElementById('userName').value.trim();
     if (name.length < 1) {
         document.getElementById('nameError').innerText = 'Name is too Short.';
