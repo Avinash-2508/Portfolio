@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     function createConfetti() {
-        const confettiCount = 250; // Number of confetti pieces
+        const confettiCount = 250;
         confettiContainer.innerHTML = ''; 
 
         // Create confetti pieces
