@@ -282,7 +282,6 @@
             particle.style.setProperty('--duration', duration);
             particle.style.animationDelay = `${delay}s`;
             
-            // Random color variation
             const hue = Math.random() * 60 + 170; // Blue to cyan range
             const opacity = Math.random() * 0.5 + 0.1;
             particle.style.background = `hsla(${hue}, 100%, 50%, ${opacity})`;
