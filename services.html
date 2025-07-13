@@ -323,7 +323,7 @@
             const icons = [document.getElementById('icon1'), document.getElementById('icon2')];
             icons.forEach(icon => {
                 const randomX = Math.random() * (window.innerWidth - 120); 
-                const randomY = Math.random() * (window.innerHeight - 120); // Adjust for image height
+                const randomY = Math.random() * (window.innerHeight - 120); 
                 icon.style.transition = 'left 2s, top 2s'; // Smooth transition
                 icon.style.left = `${randomX}px`;
                 icon.style.top = `${randomY}px`;
