@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/submit', (req, res) => {
     console.log(req.body); // Log the received data
-    res.send('Form data received'); // Send a response back to the client
+    res.send('Form data received'); 
 });
 
 // Start the server
