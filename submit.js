@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/submit', (req, res) => {
-    console.log(req.body); // Log the received data
+    console.log(req.body); 
     res.send('Form data received'); 
 });
 
