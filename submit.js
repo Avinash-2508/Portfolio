@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = 3000;
 
-// Middleware to parse JSON data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
