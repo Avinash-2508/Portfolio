@@ -22,7 +22,6 @@
                 isValid = false;
             }
 
-            // Validate Message
             if (message.trim() === '') {
                 document.getElementById('messageError').innerText = 'Message is required.';
                 isValid = false;
