@@ -43,7 +43,7 @@
                 .then(response => response.text())
                 .then(data => {
                     console.log(data);
-                    document.getElementById('successMessage').style.display = 'block'; // Show success message
+                    document.getElementById('successMessage').style.display = 'block'; 
                     document.getElementById('celebrationForm').reset(); // Reset the form
                 })
                 .catch(error => {
