@@ -9,7 +9,6 @@
             const message = document.getElementById('userMessage').value;
             let isValid = true;
 
-            // Validate Name
             if (name.trim() === '') {
                 document.getElementById('nameError').innerText = 'Name is required.';
                 isValid = false;
