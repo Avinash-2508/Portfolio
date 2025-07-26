@@ -42,7 +42,7 @@
                 })
                 .then(response => response.text())
                 .then(data => {
-                    console.log(data); // Handle the response from the server
+                    console.log(data);
                     document.getElementById('successMessage').style.display = 'block'; // Show success message
                     document.getElementById('celebrationForm').reset(); // Reset the form
                 })
