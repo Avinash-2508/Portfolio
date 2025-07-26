@@ -14,7 +14,6 @@
                 isValid = false;
             }
 
-            // Validate Email
             if (email.trim() === '') {
                 document.getElementById('emailError').innerText = 'Email is required.';
                 isValid = false;
