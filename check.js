@@ -51,6 +51,6 @@
                 });
             }
 
-            return false; // Prevent form submission
+            return false; 
         }
 
