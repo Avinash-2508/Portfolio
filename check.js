@@ -34,7 +34,6 @@
                 const formData = new FormData(document.getElementById('celebrationForm'));
                 const data = Object.fromEntries(formData.entries());
 
-                // Send data to the server
                 fetch('/submit', {
                     method: 'POST',
                     headers: {
