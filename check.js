@@ -44,7 +44,7 @@
                 .then(data => {
                     console.log(data);
                     document.getElementById('successMessage').style.display = 'block'; 
-                    document.getElementById('celebrationForm').reset(); // Reset the form
+                    document.getElementById('celebrationForm').reset(); 
                 })
                 .catch(error => {
                     console.error('Error:', error);
