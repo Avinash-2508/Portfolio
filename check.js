@@ -28,7 +28,6 @@
             }
 
             if (isValid) {
-                // Prevent default form submission
                 event.preventDefault();
 
                 const formData = new FormData(document.getElementById('celebrationForm'));
