@@ -1,7 +1,7 @@
 function validateForm() {
     document.getElementById('nameError').innerText = '';
     document.getElementById('emailError').innerText = '';
-    document.getElementById('messageError').innerText = '';
+    document.getElementById('messageError').innerText = ''
     let isValid = true;
 
     const name = document.getElementById('userName').value.trim();
@@ -125,3 +125,4 @@ document.addEventListener('DOMContentLoaded', function() {
         requestAnimationFrame(fall);
     }
 });
+
