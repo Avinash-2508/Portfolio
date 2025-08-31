@@ -8,7 +8,7 @@
 
 .orange {
     color: #ff5403;
-
+}
 
 nav a.active,
 nav a:hover {
@@ -503,4 +503,5 @@ footer {
 .scroll-top-btn:active {
     transform: translateY(-1px);
 }
+
 
