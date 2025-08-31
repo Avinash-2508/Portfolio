@@ -11,7 +11,7 @@
 }
 
 nav a.active,
-nav a:hover 
+nav a:hover {
     color: #f75a41;
     font-weight: 300;
 }
@@ -503,6 +503,7 @@ footer {
 .scroll-top-btn:active {
     transform: translateY(-1px);
 }
+
 
 
 
