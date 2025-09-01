@@ -1,8 +1,8 @@
 function validateForm() {
-    document.getElementById('nameError').innerText = '';
-    document.getElementById('emailError').innerText = '';
+    document.getElementById('nameError').innerText = ''
+    document.getElementById('emailError').innerText = ''
     document.getElementById('messageError').innerText = ''
-    let isValid = true;
+    let isValid = true
 
     const name = document.getElementById('userName').value.trim();
     if (name.length < 1) {
