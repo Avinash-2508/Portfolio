@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-boxing;
 }
 
 .orange {
@@ -504,6 +503,7 @@ footer {
 .scroll-top-btn:active {
     transform: translateY(-1px);
 }
+
 
 
 
