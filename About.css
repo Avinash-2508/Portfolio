@@ -3,7 +3,7 @@
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 .orange {
@@ -503,6 +503,7 @@ footer {
 .scroll-top-btn:active {
     transform: translateY(-1px);
 }
+
 
 
 
