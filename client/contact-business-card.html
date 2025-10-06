@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Contact & Business Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- qrcodejs CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <!-- jsPDF CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- html2canvas CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center py-8">
+
+  <div class="w-full max-w-md px-4">
+    <div id="business-card" class="bg-white rounded-2xl shadow-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 transition-all duration-300">
+      <!-- Left: Info -->
+      <div class="flex-1 w-full">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-1">Avinash Ponneboina</h2>
+        <p class="text-orange-600 font-medium mb-3">Full Stack Developer</p>
+        <div class="space-y-2 text-gray-700 text-sm">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 2a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8zm-4 18v-6m0 0l-2 2m2-2l2 2"></path></svg>
+            <span>avinash@example.com</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h2.28a2 2 0 0 1 1.94 1.52l.3 1.2a2 2 0 0 1-1.45 2.45l-.96.24a11.05 11.05 0 0 0 5.52 5.52l.24-.96a2 2 0 0 1 2.45-1.45l1.2.3A2 2 0 0 1 21 18.72V21a2 2 0 0 1-2 2h-1C7.82 23 1 16.18 1 8V7a2 2 0 0 1 2-2z"></path></svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 1 1-12 0 6 6 0 0 1 12 0zm2 14v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path></svg>
+            <a href="https://linkedin.com/in/avinashponneboina" class="hover:underline text-blue-700" target="_blank">linkedin.com/in/avinashponneboina</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.68 8.84 8.44 9.8.62.12.84-.27.84-.6v-2.17c-3.44.75-4.16-1.66-4.16-1.66-.56-1.42-1.36-1.8-1.36-1.8-1.12-.76.08-.75.08-.75 1.24.09 1.9 1.28 1.9 1.28 1.1 1.89 2.88 1.34 3.58 1.03.11-.8.43-1.34.78-1.65-2.75-.31-5.64-1.37-5.64-6.09 0-1.35.48-2.45 1.27-3.31-.13-.32-.55-1.57.12-3.27 0 0 1.03-.33 3.38 1.26a11.7 11.7 0 0 1 3.08-.41c1.05.01 2.12.14 3.08.41 2.35-1.59 3.38-1.26 3.38-1.26.67 1.7.25 2.95.12 3.27.79.86 1.27 1.96 1.27 3.31 0 4.73-2.89 5.77-5.65 6.08.44.38.83 1.13.83 2.28v3.38c0 .33.22.72.85.6C20.32 20.84 24 16.84 24 12c0-5.52-4.48-10-10-10z"></path></svg>
+            <a href="https://github.com/avinashponneboina" class="hover:underline text-gray-900" target="_blank">github.com/avinashponneboina</a>
+          </div>
+        </div>
+      </div>
+      <!-- Right: QR Code -->
+      <div class="flex flex-col items-center gap-2">
+        <div id="qrcode" class="bg-white rounded-lg p-2 shadow"></div>
+        <span class="text-xs text-gray-500">Scan for my portfolio</span>
+      </div>
+    </div>
+    <button id="download-btn" class="mt-6 w-full md:w-auto px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl shadow hover:bg-orange-500 transition-colors">
+      Download as PDF
+    </button>
+  </div>
+
+  <script>
+    // Portfolio URL for QR code
+    const portfolioUrl = "https://avinashponneboina.com";
+
+    // Generate QR code
+    new QRCode(document.getElementById("qrcode"), {
+      text: portfolioUrl,
+      width: 96,
+      height: 96,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+
+    // Download as PDF
+    function triggerDownload() {
+      const card = document.getElementById('business-card');
+      html2canvas(card, { scale: 2 }).then(canvas => {
+        const imgData = canvas.toDataURL('image/png');
+        const pdf = new window.jspdf.jsPDF({
+          orientation: 'landscape',
+          unit: 'pt',
+          format: [card.offsetWidth * 1.5, card.offsetHeight * 1.5]
+        });
+        pdf.addImage(imgData, 'PNG', 0, 0, card.offsetWidth * 1.5, card.offsetHeight * 1.5);
+        pdf.save('Avinash_Ponneboina_Business_Card.pdf');
+      });
+    }
+
+    document.getElementById('download-btn').addEventListener('click', function () {
+      triggerDownload();
+    });
+
+    // Auto-download if ?download=1 in URL (for iframe-triggered download)
+    if (window.location.search.includes('download=1')) {
+      setTimeout(() => {
+        triggerDownload();
+      }, 500);
+    }
+  </script>
+</body>
+</html>
