@@ -11,7 +11,7 @@ const AboutSection = () => {
 
     useEffect(() => {
         const handleThemeChange = (e) => {
-            setIsDark(e.detail.isDark);
+            setIsDark(e.detail.isDark)
         }
 
         window.addEventListener('themeChange', handleThemeChange)
