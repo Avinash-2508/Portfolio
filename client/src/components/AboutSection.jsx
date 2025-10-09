@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Section from './Section'
-import { assets } from '../assets/assets'
+import { assets } from '../assets/assets';
 const AboutSection = () => {
     const [showConfetti, setShowConfetti] = useState(false)
     const [isWinking, setIsWinking] = useState(false)
