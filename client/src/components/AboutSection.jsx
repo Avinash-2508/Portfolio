@@ -6,7 +6,7 @@ const AboutSection = () => {
     const [showConfetti, setShowConfetti] = useState(false)
     const [isWinking, setIsWinking] = useState(false)
     const [showSunglasses, setShowSunglasses] = useState(false)
-    const [isGlowing, setIsGlowing] = useState(false)
+    const [isGlowing, setIsGlowing] = useState(false);
     const [isDark, setIsDark] = useState(true)
 
     useEffect(() => {
